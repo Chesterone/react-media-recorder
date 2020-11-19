@@ -219,7 +219,7 @@ export const ReactMediaRecorder = ({
   const stopRecording = () => {
     if (mediaRecorder.current) {
       if (mediaRecorder.current.state !== "inactive") {
-        console.log("stopping the recording from stopRecording")
+
         setStatus("stopping");
         mediaRecorder.current.stop();
         mediaStream.current &&
